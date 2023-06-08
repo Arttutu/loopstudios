@@ -3,10 +3,10 @@ import { styled } from 'styled-components'
 import banner from './image-hero.jpg'
 import bannerMobile from './image-hero-mobile.jpg'
 import { cor1 } from '../UI/variaveis'
-import Titulo from '../UI'
+import {Titulo} from '../UI'
 
-const BannerCaixa = styled.div`
-width: 100vw;
+const BannerCaixa = styled.section`
+width: 100%;
 height: 80vh;
 background-image: url(${banner});
 background-repeat: no-repeat;
