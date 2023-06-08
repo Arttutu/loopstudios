@@ -6,17 +6,14 @@ import { cor1 } from '../UI/variaveis'
 import Titulo from '../UI'
 
 const BannerCaixa = styled.div`
-width: 100%;
+width: 100vw;
 height: 80vh;
 background-image: url(${banner});
 background-repeat: no-repeat;
 background-size: 100% 100%;
-  background-position: center;
+background-position: center;
  @media (max-width: 768px){
   background-image: url(${bannerMobile});
-  background-size: 100% 100%;
-  background-position: cover;
-
  }
 `
 const BoxBanner = styled.div`
@@ -28,20 +25,24 @@ const BoxBanner = styled.div`
 `
 const Box  = styled.div`
   width: 700px;
-  padding:30px;
-
+  padding:20px;
   border: 3px solid ${cor1};
+  margin-left: 100px;
+  @media (max-width: 768px){
+    width: 400px; 
+    margin: 0 auto;
+ }
 `
 
 export default function Banner() {
   return (
-  
    <BannerCaixa>
     <BoxBanner>
       <Box>
         <Titulo>IMMERSIVE</Titulo>
         <Titulo>EXPERIENCES</Titulo>
-        <Titulo>THAT DELIVER</Titulo>
+        <Titulo>THAT</Titulo>
+        <Titulo>DELIVER</Titulo>
       </Box>
     </BoxBanner>
    </BannerCaixa>
