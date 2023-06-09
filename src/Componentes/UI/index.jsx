@@ -24,7 +24,7 @@ export const TituloSecundary = styled.h2`
     }
 `
 export const Descricao = styled.p`
-    color: ${cor2};
+    color:  ${ (props) => props.primary ? cor1 : cor2};
     font-family: ${font2};
     font-size: 15px;
     margin: 0;

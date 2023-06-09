@@ -7,7 +7,7 @@ import Card from '../Card'
 const BoxCricacao = styled.section`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     @media (max-width:768px){
         justify-content: center;
     }
@@ -40,6 +40,7 @@ export default function Criacao() {
                     )
                 )}
         </BoxCard>
+        <Botao texto="SEE ALL"></Botao>
     </Box>
     </>
   )
