@@ -22,6 +22,8 @@ const BoxBanner = styled.div`
    display: flex;
    align-items: center;
    margin: 0 auto;
+   
+ 
 `
 const Box  = styled.div`
   width: 700px;
@@ -29,7 +31,7 @@ const Box  = styled.div`
   border: 3px solid ${cor1};
   margin-left: 100px;
   @media (max-width: 768px){
-    width: 400px; 
+    width: 80%; 
     margin: 0 auto;
  }
 `

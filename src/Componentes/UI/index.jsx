@@ -16,11 +16,11 @@ export const TituloSecundary = styled.h2`
     color: ${ (props) => props.primary ? cor2 : cor1};
     font-family: ${font1};
     font-weight: 100;
-    font-size:  32px;
+    font-size:  42px;
     margin: 0;
 
     @media (max-width: 768px){
-        font-size: 22px;
+        font-size: 32px;
     }
 `
 export const Descricao = styled.p`

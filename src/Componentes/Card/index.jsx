@@ -36,10 +36,10 @@ const Img = styled.img`
 `
 
 const Nome = styled.h2`
-    width: 100px;
-    font-size: 22px;
+    width: 150px;
+    font-size: 32px;
     position: relative;
-    top: -90px;
+    top: -150px;
     left: 50px;
     font-weight: bolder;
     transition: 0.5s;
