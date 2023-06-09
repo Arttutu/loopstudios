@@ -4,6 +4,7 @@ import { cor1 } from '../UI/variaveis'
 
 const NavLista = styled.ul`
     display: flex;
+    list-style: none;
     gap: 1.5rem;
     @media (max-width: 768px){
         flex-direction: column;
@@ -13,13 +14,14 @@ const LinkMenu = styled.a`
     font-size: 18px;
     color: ${cor1};
     transition: 0.5s;
+    cursor: pointer;
     &:hover{
         text-decoration: underline 3px;
 
     }
     
 `
-export default function NavRodpae() {
+export default function Nav() {
   return (
     <>
        

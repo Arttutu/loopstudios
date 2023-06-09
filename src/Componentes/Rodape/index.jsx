@@ -4,13 +4,13 @@ import { cor1, cor2 } from '../UI/variaveis'
 import { Box, Descricao, Titulo } from '../UI'
 import {AiFillFacebook, AiFillTwitterCircle, AiFillInstagram} from "react-icons/ai"
 import {BsPinterest} from "react-icons/bs"
-import NavRodpae from '../NavRodape'
+
+import Nav from '../Nav'
 const RodapeStyle = styled.div`
     width: 100%;
     height: 200px;
     background-color: ${cor2};
     padding-top: 50px ;
-  
     @media (max-width: 768px){
         height: auto;
         padding-bottom: 30px;
@@ -62,7 +62,7 @@ export default function Rodape() {
             <BoxGeral>
                 <BoxRodapeUm>
                     <Titulo>loopstudios</Titulo>
-                    <NavRodpae />
+                    <Nav />
                 </BoxRodapeUm>
                 <BoxRodapeDois>
                     <BoxIcone>

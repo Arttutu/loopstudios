@@ -18,6 +18,12 @@ const BotaoStyle = styled.button`
       display: none;
     }
 `
+export const MobileBotaoStyle = styled(BotaoStyle)`
+    @media (min-width: 768px) {
+      justify-content: center;
+        display: none;
+    }
+`
 export default function Botao({texto}) {
   return (
     <BotaoStyle>{texto}</BotaoStyle>

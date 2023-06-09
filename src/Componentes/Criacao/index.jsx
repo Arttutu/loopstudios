@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box,  TituloSecundary } from '../UI'
-import Botao from '../Botao'
+import Botao, { MobileBotaoStyle } from '../Botao'
 import { styled } from 'styled-components'
 import card from  "./card.json"
 import Card from '../Card'
@@ -21,27 +21,32 @@ const BoxCard = styled.div`
     }
 
 `
+
 export default function Criacao() {
   return (
     <>
     <Box>
+   
         <BoxCricacao>
-        <TituloSecundary primary>OUR CREATIONS</TituloSecundary>
-        <Botao texto="SEE ALL"></Botao>
-        </BoxCricacao>
-        <BoxCard>
-            {card.map((item) => (
-                    <Card
-                    img={item.image}
-                    titulo={item.titulo}
-                    imgmobile={item.imageMobile}
-                    key={item.titulo}
-                    />
-                    )
-                )}
-        </BoxCard>
-        <Botao texto="SEE ALL"></Botao>
-    </Box>
+          <TituloSecundary primary>OUR CREATIONS</TituloSecundary>
+          <Botao texto="SEE ALL"></Botao>
+          </BoxCricacao>
+          <BoxCard>
+              {card.map((item) => (
+                      <Card
+                      img={item.image}
+                      titulo={item.titulo}
+                      imgmobile={item.imageMobile}
+                      key={item.titulo}
+                      />
+                      )
+                  )}
+          </BoxCard>
+          <MobileBotaoStyle>SEE ALL</MobileBotaoStyle>
+        
+
+
+      </Box>
     </>
   )
 }

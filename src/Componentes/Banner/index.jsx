@@ -3,11 +3,13 @@ import { styled } from 'styled-components'
 import banner from './image-hero.jpg'
 import bannerMobile from './image-hero-mobile.jpg'
 import { cor1 } from '../UI/variaveis'
-import {Titulo} from '../UI'
+import {Box, Titulo} from '../UI'
+import NavRodpae from '../Nav'
+import Nav from '../Nav'
 
 const BannerCaixa = styled.section`
 width: 100%;
-height: 80vh;
+height: 100vh;
 background-image: url(${banner});
 background-repeat: no-repeat;
 background-size: 100% 100%;
@@ -22,10 +24,8 @@ const BoxBanner = styled.div`
    display: flex;
    align-items: center;
    margin: 0 auto;
-   
- 
 `
-const Box  = styled.div`
+const BoxCaixa  = styled.div`
   width: 700px;
   padding:20px;
   border: 3px solid ${cor1};
@@ -35,18 +35,31 @@ const Box  = styled.div`
     margin: 0 auto;
  }
 `
+const BoxMenu  = styled.div`
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
 
 export default function Banner() {
   return (
    <BannerCaixa>
+    <Box>
+      <BoxMenu>
+        <Titulo>Loopstudios</Titulo>
+        <Nav />
+      </BoxMenu>
     <BoxBanner>
-      <Box>
+      <BoxCaixa>
         <Titulo>IMMERSIVE</Titulo>
         <Titulo>EXPERIENCES</Titulo>
         <Titulo>THAT</Titulo>
         <Titulo>DELIVER</Titulo>
-      </Box>
+      </BoxCaixa>
     </BoxBanner>
+    </Box>
+ 
    </BannerCaixa>
   )
 }
