@@ -4,7 +4,8 @@ import { cor1, cor2, font1, font2 } from "./variaveis";
 export const Titulo = styled.h1`
     color: ${ (props) => props.primary ? cor2 : cor1};
     font-family: ${font1};
-    font-size: 40px;
+    font-weight: 100;
+    font-size:  42px;
     margin: 0;
 
     @media (max-width: 768px){
@@ -17,5 +18,8 @@ export const Descricao = styled.p`
     font-size: 15px;
     margin: 0;
 `
-
-
+export const Box = styled.div`
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+`

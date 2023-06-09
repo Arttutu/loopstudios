@@ -1,8 +1,9 @@
-import { styled } from "styled-components";
+
 import Banner from "./Componentes/Banner";
 import { GlobalStyle } from "./Componentes/GlobalStyles";
 import Sobre from "./Componentes/Sobre";
 import Separador from "./Componentes/Separador";
+import Criacao from "./Componentes/Criacao";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Banner />
       <Separador />
       <Sobre />
+      <Separador />
+      <Criacao />
     </main>
     <footer>
 
