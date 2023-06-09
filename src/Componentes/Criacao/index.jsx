@@ -1,20 +1,24 @@
 import React from 'react'
-import { Box, Titulo } from '../UI'
+import { Box,  TituloSecundary } from '../UI'
 import Botao from '../Botao'
 import { styled } from 'styled-components'
 import card from  "./card.json"
 import Card from '../Card'
 const BoxCricacao = styled.section`
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     @media (max-width:768px){
         justify-content: center;
     }
 `
 const BoxCard = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  @media (max-width:768px){
+        justify-content: center;
+    }
 
 `
 export default function Criacao() {
@@ -22,7 +26,7 @@ export default function Criacao() {
     <>
     <Box>
         <BoxCricacao>
-        <Titulo primary >OUR CREATIONS</Titulo>
+        <TituloSecundary primary>OUR CREATIONS</TituloSecundary>
         <Botao texto="SEE ALL"></Botao>
         </BoxCricacao>
         <BoxCard>
@@ -30,6 +34,8 @@ export default function Criacao() {
                     <Card
                     img={item.image}
                     titulo={item.titulo}
+                    imgmobile={item.imageMobile}
+                    key={item.titulo}
                     />
                     )
                 )}

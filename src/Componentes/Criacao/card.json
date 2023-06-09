@@ -2,41 +2,49 @@
 
     {
         "image":  "./img/desktop/image-deep-earth.jpg",
+        "imageMobile": "./img/mobile/image-deep-earth.jpg",
         "titulo": "DEEP EARTH"
 
     },
     {
         "image":  "./img/desktop/image-night-arcade.jpg",
+        "imageMobile": "./img/mobile/image-night-arcade.jpg",
         "titulo": "NIGHT ARCADE"
 
     },
     {
         "image":  "./img/desktop/image-soccer-team.jpg",
+        "imageMobile": "./img/mobile/image-soccer-team.jpg",
         "titulo": "SOCCER TEAM VR"
 
     },
     {
         "image":  "./img/desktop/image-grid.jpg",
+        "imageMobile": "./img/mobile/image-grid.jpg",
         "titulo": "THE GRID"
 
     },
     {
         "image":  "./img/desktop/image-from-above.jpg",
+        "imageMobile": "./img/mobile/image-from-above.jpg",
         "titulo": "FROM UP ABOVE VR"
 
     },
     {
         "image":  "./img/desktop/image-pocket-borealis.jpg",
+        "imageMobile": "./img/mobile/image-pocket-borealis.jpg",
         "titulo": "POCKET BOREALIS"
 
     },
     {
         "image":  "./img/desktop/image-curiosity.jpg",
+        "imageMobile": "./img/mobile/image-curiosity.jpg",
         "titulo": "THE CURIOSITY"
 
     },
     {
         "image":  "./img/desktop/image-fisheye.jpg",
+        "imageMobile": "./img/mobile/image-fisheye.jpg",
         "titulo": "MAKE IT FISHEYE"
 
     }

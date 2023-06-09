@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import imageSobre from "./image-interactive.jpg"
-import {Titulo, Descricao } from '../UI'
+import {Titulo, Descricao, TituloSecundary } from '../UI'
 import { cor1 } from '../UI/variaveis'
 const BoxSobre = styled.section`
     max-width: 1440px;
@@ -50,7 +50,7 @@ export default function Sobre() {
     <BoxSobre>
         <Image src={imageSobre}></Image>
         <BoxConteudo>
-            <Titulo primary>THE LEADER IN INTERACTIVE VR</Titulo>
+            <TituloSecundary primary = "true">THE LEADER IN INTERACTIVE VR</TituloSecundary>
             <Descricao primary>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</Descricao>
         </BoxConteudo>
     </BoxSobre>
