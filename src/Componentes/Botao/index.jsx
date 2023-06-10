@@ -9,7 +9,6 @@ const BotaoStyle = styled.button`
     border-radius: 5px;
     font-size: 18px;
     transition: 0.5s;
-   
     &:hover{
       color: ${cor1};
       background-color: ${cor2};
@@ -17,13 +16,16 @@ const BotaoStyle = styled.button`
     @media (max-width:768px){
       display: none;
     }
+   
 `
-export const MobileBotaoStyle = styled(BotaoStyle)`
-    @media (min-width: 768px) {
-      justify-content: center;
-        display: none;
+export const BotaoMobile = styled(BotaoStyle)`
+  display: none;
+  @media (max-width:768px){
+      display: block;
     }
+
 `
+
 export default function Botao({texto}) {
   return (
     <BotaoStyle>{texto}</BotaoStyle>

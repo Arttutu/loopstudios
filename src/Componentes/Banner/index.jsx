@@ -3,8 +3,7 @@ import { styled } from 'styled-components'
 import banner from './image-hero.jpg'
 import bannerMobile from './image-hero-mobile.jpg'
 import { cor1 } from '../UI/variaveis'
-import {Box, Titulo} from '../UI'
-import NavRodpae from '../Nav'
+import {Box, Titulo, TituloLogo} from '../UI'
 import Nav from '../Nav'
 
 const BannerCaixa = styled.section`
@@ -37,6 +36,7 @@ const BoxCaixa  = styled.div`
 `
 const BoxMenu  = styled.div`
   padding-top: 20px;
+  margin: 0px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +47,7 @@ export default function Banner() {
    <BannerCaixa>
     <Box>
       <BoxMenu>
-        <Titulo>Loopstudios</Titulo>
+        <TituloLogo className='logo'>Loopstudios</TituloLogo>
         <Nav />
       </BoxMenu>
     <BoxBanner>

@@ -20,6 +20,7 @@ const BoxGeral = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 40px;
     @media (max-width: 768px){
         flex-direction: column;
         justify-content: center;
@@ -28,10 +29,10 @@ const BoxGeral = styled.div`
 `
 const BoxRodapeDois = styled.div`
     display: flex;
-    gap: 80px;
+    gap: 50px;
     flex-direction: column;
+    align-items: center;
     @media (max-width: 768px){
-        align-items: center;
         gap:1rem
     }
  
