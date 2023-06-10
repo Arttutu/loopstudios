@@ -5,7 +5,7 @@ Protótipo do site loopstudios VR
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Farm Easy**
+| :sparkles: Nome        | **Loopstudios**
 | :label: Tecnologias | JavaScript, HTML, Styled-Componentes (tecnologias utilizadas)
 | :rocket: URL         | loopstudios-arttutu.vercel.app
 | :fire: Desafio     | 
