@@ -12,7 +12,8 @@ export const Titulo = styled.h1`
     }
 `
 export const TituloLogo = styled(Titulo)`
-    font-size: 22px;
+    font-size: 32px;
+    font-weight: bolder;
   
 `
 export const TituloSecundary = styled.h2`

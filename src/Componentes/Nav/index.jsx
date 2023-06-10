@@ -12,6 +12,7 @@ const NavLista = styled.ul`
 `
 const LinkMenu = styled.a`
     font-size: 18px;
+    font-weight: bolder;
     color: ${cor1};
     transition: 0.5s;
     cursor: pointer;

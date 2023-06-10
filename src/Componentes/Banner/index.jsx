@@ -19,7 +19,7 @@ background-position: center;
 `
 const BoxBanner = styled.div`
    max-width: 1440px;
-   height: 100vh;
+   height: 80vh;
    display: flex;
    align-items: center;
    margin: 0 auto;
@@ -35,7 +35,7 @@ const BoxCaixa  = styled.div`
  }
 `
 const BoxMenu  = styled.div`
-  padding-top: 20px;
+  padding-top: 40px;
   margin: 0px 50px;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ export default function Banner() {
    <BannerCaixa>
     <Box>
       <BoxMenu>
-        <TituloLogo className='logo'>Loopstudios</TituloLogo>
+        <TituloLogo>Loopstudios</TituloLogo>
         <Nav />
       </BoxMenu>
     <BoxBanner>

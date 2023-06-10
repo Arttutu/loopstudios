@@ -21,7 +21,9 @@ const BotaoStyle = styled.button`
 export const BotaoMobile = styled(BotaoStyle)`
   display: none;
   @media (max-width:768px){
-      display: block;
+      display: flex;
+      
+      
     }
 
 `
