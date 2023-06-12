@@ -4,7 +4,8 @@ import banner from './image-hero.jpg'
 import bannerMobile from './image-hero-mobile.jpg'
 import { cor1 } from '../UI/variaveis'
 import {Box, Titulo, TituloLogo} from '../UI'
-import Nav from '../Nav'
+import Nav, { LinkMenu } from '../Nav'
+import {GiHamburgerMenu} from "react-icons/gi"
 
 const BannerCaixa = styled.section`
 width: 100%;
@@ -40,15 +41,22 @@ const BoxMenu  = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  >svg{
+    @media (min-width: 768px){
+      display: none;
+    }
+  }
 `
 
-export default function Banner() {
+export default function Banner({setMenuOpen}) {
   return (
    <BannerCaixa>
     <Box>
       <BoxMenu>
         <TituloLogo>Loopstudios</TituloLogo>
-        <Nav />
+        <Nav setMenuOpen ={setMenuOpen} />
+        <GiHamburgerMenu size={35} color='#FFF' onClick={() => setMenuOpen(true)}/>
       </BoxMenu>
     <BoxBanner>
       <BoxCaixa>

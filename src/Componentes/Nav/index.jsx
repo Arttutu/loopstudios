@@ -4,40 +4,30 @@ import { cor1 } from '../UI/variaveis';
 
  export const NavLista = styled.ul`
   display: flex;
+  align-items: center;
+  justify-content: start;
   list-style: none;
   gap: 1.5rem;
-
   @media (max-width: 768px) {
     flex-direction: column;
-    display: ${({ isMobileOpen }) => (isMobileOpen ? 'flex' : 'none')};
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    z-index: 999;
+    display: none;
   }
 `;
-
 export const LinkMenu = styled.a`
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bolder;
   color: ${cor1};
   transition: 0.5s;
   cursor: pointer;
-
   &:hover {
     text-decoration: underline 3px;
+
   }
 `;
 
 
 
 export default function Nav() {
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
-
   return (
     <>
       <nav>
