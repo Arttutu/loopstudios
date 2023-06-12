@@ -8,13 +8,16 @@ import Rodape from "./Componentes/Rodape";
 import { useState } from "react";
 import MenuMobile from "./Componentes/MenuMobile";
 
+
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+ 
   return (
     <>
     <GlobalStyle />
     <header>
-      <MenuMobile menuOpen={menuOpen} setMenuOpen = {setMenuOpen} />
+      <MenuMobile menuopen = {menuOpen} setMenuOpen = {setMenuOpen} />
       <Banner  setMenuOpen = {setMenuOpen}/>
     </header>
     <main>

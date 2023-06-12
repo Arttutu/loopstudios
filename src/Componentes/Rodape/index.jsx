@@ -4,7 +4,6 @@ import { cor1, cor2 } from '../UI/variaveis'
 import { Box, Descricao, Titulo } from '../UI'
 import {AiFillFacebook, AiFillTwitterCircle, AiFillInstagram} from "react-icons/ai"
 import {BsPinterest} from "react-icons/bs"
-
 import Nav from '../Nav'
 const RodapeStyle = styled.div`
     width: 100%;
@@ -63,7 +62,7 @@ export default function Rodape() {
             <BoxGeral>
                 <BoxRodapeUm>
                     <Titulo>loopstudios</Titulo>
-                    <Nav />
+                    <Nav rodape={true} />
                 </BoxRodapeUm>
                 <BoxRodapeDois>
                     <BoxIcone>

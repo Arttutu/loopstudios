@@ -9,27 +9,24 @@ const BotaoStyle = styled.button`
     border-radius: 5px;
     font-size: 18px;
     transition: 0.5s;
+    @media (max-width: 768px){
+      display: ${({ botaoDesktop }) => (botaoDesktop ? "none" : "")};
+
+    }
+ 
     &:hover{
       color: ${cor1};
       background-color: ${cor2};
     }
-    @media (max-width:768px){
-      display: none;
-    }
+    
+     
+
+    
    
 `
-export const BotaoMobile = styled(BotaoStyle)`
-  display: none;
-  @media (max-width:768px){
-      display: flex;
-      
-      
-    }
 
-`
-
-export default function Botao({texto}) {
+export default function Botao({texto, botaoDesktop}) {
   return (
-    <BotaoStyle>{texto}</BotaoStyle>
+    <BotaoStyle botaoDesktop= {botaoDesktop}>{texto}</BotaoStyle>
   )
 }

@@ -10,7 +10,8 @@ import { cor1 } from '../UI/variaveis';
   gap: 1.5rem;
   @media (max-width: 768px) {
     flex-direction: column;
-    display: none;
+    display: ${({ rodape }) => (rodape ? "" : "none")};
+
   }
 `;
 export const LinkMenu = styled.a`
@@ -27,11 +28,11 @@ export const LinkMenu = styled.a`
 
 
 
-export default function Nav() {
+export default function Nav({rodape}) {
   return (
     <>
       <nav>
-        <NavLista>
+        <NavLista rodape={rodape}>
           <li>
             <LinkMenu> About</LinkMenu>
           </li>

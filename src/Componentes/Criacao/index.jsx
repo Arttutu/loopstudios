@@ -25,7 +25,8 @@ const BoxCard = styled.div`
 const BoxGeral = styled.div`
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
+  justify-content: center;
   gap:  2rem;
 `
 export default function Criacao() {
@@ -35,7 +36,7 @@ export default function Criacao() {
       <BoxGeral>
         <BoxCricacao>
             <TituloSecundary $primary>OUR CREATIONS</TituloSecundary>
-            <Botao texto="SEE ALL"></Botao>
+            <Botao botaoDesktop texto="SEE ALL"></Botao>
         </BoxCricacao>
         <BoxCard>
                 {card.map((item) => (
@@ -48,7 +49,7 @@ export default function Criacao() {
                         )
                     )}
         </BoxCard>
-        <BotaoMobile texto= "SEE ALL" >SEE ALL</BotaoMobile>
+        <Botao  texto= "SEE ALL" >SEE ALL</Botao>
       </BoxGeral>
 
 
