@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import { cor1, cor2 } from '../UI/variaveis'
-const BotaoStyle = styled.button`
+export const BotaoStyle = styled.button`
     border: 2px solid ${cor2};
     color: ${cor2};
     padding: 10px;
@@ -9,9 +9,9 @@ const BotaoStyle = styled.button`
     border-radius: 5px;
     font-size: 18px;
     transition: 0.5s;
+   
     @media (max-width: 768px){
-      display: ${({ botaoDesktop }) => (botaoDesktop ? "none" : "")};
-
+      display: none;
     }
  
     &:hover{
@@ -25,8 +25,8 @@ const BotaoStyle = styled.button`
    
 `
 
-export default function Botao({texto, botaoDesktop}) {
+export default function Botao({texto}) {
   return (
-    <BotaoStyle botaoDesktop= {botaoDesktop}>{texto}</BotaoStyle>
+    <BotaoStyle>{texto}</BotaoStyle>
   )
 }
